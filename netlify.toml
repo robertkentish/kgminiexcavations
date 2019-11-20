@@ -1,0 +1,5 @@
+[build]
+  command = "yarn gatsby-build"
+  publish = "site/public/"
+
+[template]
