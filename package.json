@@ -1,0 +1,33 @@
+{
+  "name": "react-next-landing",
+  "description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
+  "version": "3.2.0",
+  "private": true,
+  "author": "RedQ Team",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "cross-env": "^5.2.0",
+    "lint-staged": "^9.1.0",
+    "prettier": "^1.18.2"
+  },
+  "workspaces": [
+    "site",
+    "packages/reusecore"
+  ],
+  "scripts": {
+    "gatsby-dev": "yarn workspace site run dev",
+    "gatsby-build": "yarn workspace site run build",
+    "gatsby-serve": "yarn workspace site run serve"
+  },
+  "lint-staged": {
+    "*.{js,md,css}": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
+  }
+}
